@@ -1,0 +1,8 @@
+inhibit_all_warnings!
+
+platform :ios, '11.0'
+target 'AOEMVVMSimple' do
+
+pod 'ReactiveObjC'
+
+end
