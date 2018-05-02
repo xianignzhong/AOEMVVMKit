@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7F2C1C4A5AE31970A6BB3AE9 /* libPods-AOEMVVMSimple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BF035FE29BCAE8E2AC3C66 /* libPods-AOEMVVMSimple.a */; };
-		B2037EF12019B4D00042675C /* AMKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B2037EF02019B4D00042675C /* AMKParser.m */; };
-		B215715D201C45F20011BA7F /* AMKWorkSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = B215715C201C45F20011BA7F /* AMKWorkSpace.m */; };
+		B252DCC8206C97E00038831F /* NSObject+AMKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCAD206C97E00038831F /* NSObject+AMKSwizzle.m */; };
+		B252DCC9206C97E00038831F /* AMKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCAE206C97E00038831F /* AMKParser.m */; };
+		B252DCCA206C97E00038831F /* AMKJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCB6206C97E00038831F /* AMKJumpManager.m */; };
+		B252DCCB206C97E00038831F /* AMKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCB8206C97E00038831F /* AMKViewController.m */; };
+		B252DCCC206C97E00038831F /* AMKViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCBA206C97E00038831F /* AMKViewModel.m */; };
+		B252DCCD206C97E00038831F /* UIViewController+AMKLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCBC206C97E00038831F /* UIViewController+AMKLogic.m */; };
+		B252DCCE206C97E00038831F /* AMKWorkSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCC0206C97E00038831F /* AMKWorkSpace.m */; };
+		B252DCCF206C97E00038831F /* UIViewController+AMKComponentUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B252DCC5206C97E00038831F /* UIViewController+AMKComponentUI.m */; };
 		B2667E39202045D4000989D2 /* FourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2667E38202045D4000989D2 /* FourVC.m */; };
 		B2667E3C202045E6000989D2 /* FourVM.m in Sources */ = {isa = PBXBuildFile; fileRef = B2667E3B202045E6000989D2 /* FourVM.m */; };
 		B2CD2087201583BA00EF8AC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD2086201583BA00EF8AC2 /* AppDelegate.m */; };
@@ -19,15 +25,9 @@
 		B2CD2095201583BA00EF8AC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD2094201583BA00EF8AC2 /* main.m */; };
 		B2CD209F201583BB00EF8AC2 /* AOEMVVMSimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD209E201583BB00EF8AC2 /* AOEMVVMSimpleTests.m */; };
 		B2CD20AA201583BB00EF8AC2 /* AOEMVVMSimpleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20A9201583BB00EF8AC2 /* AOEMVVMSimpleUITests.m */; };
-		B2CD20CC201583C200EF8AC2 /* NSObject+AMKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20BB201583C200EF8AC2 /* NSObject+AMKSwizzle.m */; };
-		B2CD20CD201583C200EF8AC2 /* AMKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20C1201583C200EF8AC2 /* AMKViewController.m */; };
-		B2CD20CE201583C200EF8AC2 /* AMKViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20C3201583C200EF8AC2 /* AMKViewModel.m */; };
-		B2CD20CF201583C200EF8AC2 /* UIViewController+AMKLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20C5201583C200EF8AC2 /* UIViewController+AMKLogic.m */; };
-		B2CD20D0201583C200EF8AC2 /* UIViewController+AMKComponentUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20C9201583C200EF8AC2 /* UIViewController+AMKComponentUI.m */; };
 		B2CD20D9201596F000EF8AC2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20D8201596F000EF8AC2 /* FirstViewController.m */; };
 		B2CD20DC201596FA00EF8AC2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20DB201596FA00EF8AC2 /* SecondViewController.m */; };
 		B2CD20DF2015997100EF8AC2 /* FirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD20DE2015997100EF8AC2 /* FirstViewModel.m */; };
-		B2FD0414201713650039DE10 /* AMKJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FD0413201713650039DE10 /* AMKJumpManager.m */; };
 		B2FD0418201722F60039DE10 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FD0417201722F60039DE10 /* ThreeViewController.m */; };
 		B2FD041B2017277C0039DE10 /* Four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FD041A2017277C0039DE10 /* Four.storyboard */; };
 		B2FD041E20187FF10039DE10 /* ThreeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FD041D20187FF10039DE10 /* ThreeViewModel.m */; };
@@ -53,11 +53,26 @@
 /* Begin PBXFileReference section */
 		51BF035FE29BCAE8E2AC3C66 /* libPods-AOEMVVMSimple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOEMVVMSimple.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7FDD10D9442A398FA225D8 /* Pods-AOEMVVMSimple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOEMVVMSimple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AOEMVVMSimple/Pods-AOEMVVMSimple.debug.xcconfig"; sourceTree = "<group>"; };
-		B2037EEF2019B4D00042675C /* AMKParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMKParser.h; sourceTree = "<group>"; };
-		B2037EF02019B4D00042675C /* AMKParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMKParser.m; sourceTree = "<group>"; };
-		B215715B201C45F20011BA7F /* AMKWorkSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMKWorkSpace.h; sourceTree = "<group>"; };
-		B215715C201C45F20011BA7F /* AMKWorkSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMKWorkSpace.m; sourceTree = "<group>"; };
-		B215715F201C598C0011BA7F /* AMKComponentRunable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMKComponentRunable.h; sourceTree = "<group>"; };
+		B252DCAC206C97E00038831F /* AMKUnitMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKUnitMarco.h; sourceTree = "<group>"; };
+		B252DCAD206C97E00038831F /* NSObject+AMKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AMKSwizzle.m"; sourceTree = "<group>"; };
+		B252DCAE206C97E00038831F /* AMKParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKParser.m; sourceTree = "<group>"; };
+		B252DCAF206C97E00038831F /* NSObject+AMKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AMKSwizzle.h"; sourceTree = "<group>"; };
+		B252DCB0206C97E00038831F /* AMKParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKParser.h; sourceTree = "<group>"; };
+		B252DCB3206C97E00038831F /* AMKEventHandlerPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKEventHandlerPort.h; sourceTree = "<group>"; };
+		B252DCB5206C97E00038831F /* AMKJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKJumpManager.h; sourceTree = "<group>"; };
+		B252DCB6206C97E00038831F /* AMKJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKJumpManager.m; sourceTree = "<group>"; };
+		B252DCB8206C97E00038831F /* AMKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKViewController.m; sourceTree = "<group>"; };
+		B252DCB9206C97E00038831F /* UIViewController+AMKLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AMKLogic.h"; sourceTree = "<group>"; };
+		B252DCBA206C97E00038831F /* AMKViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKViewModel.m; sourceTree = "<group>"; };
+		B252DCBB206C97E00038831F /* AMKViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKViewModel.h; sourceTree = "<group>"; };
+		B252DCBC206C97E00038831F /* UIViewController+AMKLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMKLogic.m"; sourceTree = "<group>"; };
+		B252DCBD206C97E00038831F /* AMKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKViewController.h; sourceTree = "<group>"; };
+		B252DCBF206C97E00038831F /* AMKWorkSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKWorkSpace.h; sourceTree = "<group>"; };
+		B252DCC0206C97E00038831F /* AMKWorkSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKWorkSpace.m; sourceTree = "<group>"; };
+		B252DCC2206C97E00038831F /* AMKComponentRunable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKComponentRunable.h; sourceTree = "<group>"; };
+		B252DCC5206C97E00038831F /* UIViewController+AMKComponentUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMKComponentUI.m"; sourceTree = "<group>"; };
+		B252DCC6206C97E00038831F /* UIViewController+AMKComponentUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AMKComponentUI.h"; sourceTree = "<group>"; };
+		B252DCC7206C97E00038831F /* AOEMVVMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOEMVVMKit.h; sourceTree = "<group>"; };
 		B2667E37202045D4000989D2 /* FourVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourVC.h; sourceTree = "<group>"; };
 		B2667E38202045D4000989D2 /* FourVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourVC.m; sourceTree = "<group>"; };
 		B2667E3A202045E6000989D2 /* FourVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourVM.h; sourceTree = "<group>"; };
@@ -76,27 +91,12 @@
 		B2CD20A5201583BB00EF8AC2 /* AOEMVVMSimpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOEMVVMSimpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CD20A9201583BB00EF8AC2 /* AOEMVVMSimpleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOEMVVMSimpleUITests.m; sourceTree = "<group>"; };
 		B2CD20AB201583BB00EF8AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2CD20BA201583C200EF8AC2 /* AMKUnitMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKUnitMarco.h; sourceTree = "<group>"; };
-		B2CD20BB201583C200EF8AC2 /* NSObject+AMKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AMKSwizzle.m"; sourceTree = "<group>"; };
-		B2CD20BC201583C200EF8AC2 /* NSObject+AMKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AMKSwizzle.h"; sourceTree = "<group>"; };
-		B2CD20BF201583C200EF8AC2 /* AMKEventHandlerPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKEventHandlerPort.h; sourceTree = "<group>"; };
-		B2CD20C1201583C200EF8AC2 /* AMKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKViewController.m; sourceTree = "<group>"; };
-		B2CD20C2201583C200EF8AC2 /* UIViewController+AMKLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AMKLogic.h"; sourceTree = "<group>"; };
-		B2CD20C3201583C200EF8AC2 /* AMKViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKViewModel.m; sourceTree = "<group>"; };
-		B2CD20C4201583C200EF8AC2 /* AMKViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKViewModel.h; sourceTree = "<group>"; };
-		B2CD20C5201583C200EF8AC2 /* UIViewController+AMKLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMKLogic.m"; sourceTree = "<group>"; };
-		B2CD20C6201583C200EF8AC2 /* AMKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKViewController.h; sourceTree = "<group>"; };
-		B2CD20C9201583C200EF8AC2 /* UIViewController+AMKComponentUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMKComponentUI.m"; sourceTree = "<group>"; };
-		B2CD20CA201583C200EF8AC2 /* UIViewController+AMKComponentUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AMKComponentUI.h"; sourceTree = "<group>"; };
-		B2CD20CB201583C200EF8AC2 /* AOEMVVMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOEMVVMKit.h; sourceTree = "<group>"; };
 		B2CD20D7201596F000EF8AC2 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B2CD20D8201596F000EF8AC2 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B2CD20DA201596FA00EF8AC2 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B2CD20DB201596FA00EF8AC2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B2CD20DD2015997100EF8AC2 /* FirstViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewModel.h; sourceTree = "<group>"; };
 		B2CD20DE2015997100EF8AC2 /* FirstViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewModel.m; sourceTree = "<group>"; };
-		B2FD0412201713650039DE10 /* AMKJumpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMKJumpManager.h; sourceTree = "<group>"; };
-		B2FD0413201713650039DE10 /* AMKJumpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMKJumpManager.m; sourceTree = "<group>"; };
 		B2FD0416201722F60039DE10 /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		B2FD0417201722F60039DE10 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		B2FD04192017235A0039DE10 /* FirstEventHandlerPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstEventHandlerPort.h; sourceTree = "<group>"; };
@@ -140,21 +140,111 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B215715A201C45DF0011BA7F /* WorkSpace */ = {
+		B252DCA9206C97E00038831F /* AOEMVVMKit */ = {
 			isa = PBXGroup;
 			children = (
-				B215715B201C45F20011BA7F /* AMKWorkSpace.h */,
-				B215715C201C45F20011BA7F /* AMKWorkSpace.m */,
+				B252DCAA206C97E00038831F /* Core */,
+				B252DCC7206C97E00038831F /* AOEMVVMKit.h */,
+			);
+			path = AOEMVVMKit;
+			sourceTree = "<group>";
+		};
+		B252DCAA206C97E00038831F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCAB206C97E00038831F /* Unit */,
+				B252DCB1206C97E00038831F /* Extension */,
+				B252DCBE206C97E00038831F /* WorkSpace */,
+				B252DCC1206C97E00038831F /* Runable */,
+				B252DCC3206C97E00038831F /* AbsModule */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B252DCAB206C97E00038831F /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCAC206C97E00038831F /* AMKUnitMarco.h */,
+				B252DCAD206C97E00038831F /* NSObject+AMKSwizzle.m */,
+				B252DCAE206C97E00038831F /* AMKParser.m */,
+				B252DCAF206C97E00038831F /* NSObject+AMKSwizzle.h */,
+				B252DCB0206C97E00038831F /* AMKParser.h */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		B252DCB1206C97E00038831F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCB2206C97E00038831F /* Interface */,
+				B252DCB4206C97E00038831F /* Manager */,
+				B252DCB7206C97E00038831F /* Layer */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B252DCB2206C97E00038831F /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCB3206C97E00038831F /* AMKEventHandlerPort.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		B252DCB4206C97E00038831F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCB5206C97E00038831F /* AMKJumpManager.h */,
+				B252DCB6206C97E00038831F /* AMKJumpManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B252DCB7206C97E00038831F /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCB8206C97E00038831F /* AMKViewController.m */,
+				B252DCB9206C97E00038831F /* UIViewController+AMKLogic.h */,
+				B252DCBA206C97E00038831F /* AMKViewModel.m */,
+				B252DCBB206C97E00038831F /* AMKViewModel.h */,
+				B252DCBC206C97E00038831F /* UIViewController+AMKLogic.m */,
+				B252DCBD206C97E00038831F /* AMKViewController.h */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		B252DCBE206C97E00038831F /* WorkSpace */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCBF206C97E00038831F /* AMKWorkSpace.h */,
+				B252DCC0206C97E00038831F /* AMKWorkSpace.m */,
 			);
 			path = WorkSpace;
 			sourceTree = "<group>";
 		};
-		B215715E201C595C0011BA7F /* Runable */ = {
+		B252DCC1206C97E00038831F /* Runable */ = {
 			isa = PBXGroup;
 			children = (
-				B215715F201C598C0011BA7F /* AMKComponentRunable.h */,
+				B252DCC2206C97E00038831F /* AMKComponentRunable.h */,
 			);
 			path = Runable;
+			sourceTree = "<group>";
+		};
+		B252DCC3206C97E00038831F /* AbsModule */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCC4206C97E00038831F /* Layer */,
+			);
+			path = AbsModule;
+			sourceTree = "<group>";
+		};
+		B252DCC4206C97E00038831F /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B252DCC5206C97E00038831F /* UIViewController+AMKComponentUI.m */,
+				B252DCC6206C97E00038831F /* UIViewController+AMKComponentUI.h */,
+			);
+			path = Layer;
 			sourceTree = "<group>";
 		};
 		B2667E36202045BA000989D2 /* Four */ = {
@@ -193,7 +283,7 @@
 		B2CD2084201583BA00EF8AC2 /* AOEMVVMSimple */ = {
 			isa = PBXGroup;
 			children = (
-				B2CD20B7201583C200EF8AC2 /* AOEMVVMKit */,
+				B252DCA9206C97E00038831F /* AOEMVVMKit */,
 				B2CD20D42015966800EF8AC2 /* Module */,
 				B2CD2085201583BA00EF8AC2 /* AppDelegate.h */,
 				B2CD2086201583BA00EF8AC2 /* AppDelegate.m */,
@@ -223,87 +313,6 @@
 				B2CD20AB201583BB00EF8AC2 /* Info.plist */,
 			);
 			path = AOEMVVMSimpleUITests;
-			sourceTree = "<group>";
-		};
-		B2CD20B7201583C200EF8AC2 /* AOEMVVMKit */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD20CB201583C200EF8AC2 /* AOEMVVMKit.h */,
-				B2CD20B8201583C200EF8AC2 /* Core */,
-			);
-			path = AOEMVVMKit;
-			sourceTree = "<group>";
-		};
-		B2CD20B8201583C200EF8AC2 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD20B9201583C200EF8AC2 /* Unit */,
-				B2CD20BD201583C200EF8AC2 /* Extension */,
-				B2CD20C7201583C200EF8AC2 /* AbsModule */,
-				B215715E201C595C0011BA7F /* Runable */,
-				B215715A201C45DF0011BA7F /* WorkSpace */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		B2CD20B9201583C200EF8AC2 /* Unit */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD20BA201583C200EF8AC2 /* AMKUnitMarco.h */,
-				B2037EEF2019B4D00042675C /* AMKParser.h */,
-				B2037EF02019B4D00042675C /* AMKParser.m */,
-				B2CD20BC201583C200EF8AC2 /* NSObject+AMKSwizzle.h */,
-				B2CD20BB201583C200EF8AC2 /* NSObject+AMKSwizzle.m */,
-			);
-			path = Unit;
-			sourceTree = "<group>";
-		};
-		B2CD20BD201583C200EF8AC2 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				B2FD04112017134D0039DE10 /* Manager */,
-				B2CD20BE201583C200EF8AC2 /* Interface */,
-				B2CD20C0201583C200EF8AC2 /* Layer */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		B2CD20BE201583C200EF8AC2 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD20BF201583C200EF8AC2 /* AMKEventHandlerPort.h */,
-			);
-			path = Interface;
-			sourceTree = "<group>";
-		};
-		B2CD20C0201583C200EF8AC2 /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD20C4201583C200EF8AC2 /* AMKViewModel.h */,
-				B2CD20C3201583C200EF8AC2 /* AMKViewModel.m */,
-				B2CD20C6201583C200EF8AC2 /* AMKViewController.h */,
-				B2CD20C1201583C200EF8AC2 /* AMKViewController.m */,
-				B2CD20C2201583C200EF8AC2 /* UIViewController+AMKLogic.h */,
-				B2CD20C5201583C200EF8AC2 /* UIViewController+AMKLogic.m */,
-			);
-			path = Layer;
-			sourceTree = "<group>";
-		};
-		B2CD20C7201583C200EF8AC2 /* AbsModule */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD20C8201583C200EF8AC2 /* Layer */,
-			);
-			path = AbsModule;
-			sourceTree = "<group>";
-		};
-		B2CD20C8201583C200EF8AC2 /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD20CA201583C200EF8AC2 /* UIViewController+AMKComponentUI.h */,
-				B2CD20C9201583C200EF8AC2 /* UIViewController+AMKComponentUI.m */,
-			);
-			path = Layer;
 			sourceTree = "<group>";
 		};
 		B2CD20D42015966800EF8AC2 /* Module */ = {
@@ -336,15 +345,6 @@
 				B2CD20DB201596FA00EF8AC2 /* SecondViewController.m */,
 			);
 			path = Second;
-			sourceTree = "<group>";
-		};
-		B2FD04112017134D0039DE10 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				B2FD0412201713650039DE10 /* AMKJumpManager.h */,
-				B2FD0413201713650039DE10 /* AMKJumpManager.m */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		B2FD0415201722E30039DE10 /* Three */ = {
@@ -555,23 +555,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B252DCCD206C97E00038831F /* UIViewController+AMKLogic.m in Sources */,
+				B252DCCF206C97E00038831F /* UIViewController+AMKComponentUI.m in Sources */,
+				B252DCCE206C97E00038831F /* AMKWorkSpace.m in Sources */,
+				B252DCC9206C97E00038831F /* AMKParser.m in Sources */,
 				B2CD20DC201596FA00EF8AC2 /* SecondViewController.m in Sources */,
-				B2CD20CE201583C200EF8AC2 /* AMKViewModel.m in Sources */,
-				B2CD20CD201583C200EF8AC2 /* AMKViewController.m in Sources */,
 				B2FD0418201722F60039DE10 /* ThreeViewController.m in Sources */,
-				B2037EF12019B4D00042675C /* AMKParser.m in Sources */,
-				B2CD20D0201583C200EF8AC2 /* UIViewController+AMKComponentUI.m in Sources */,
-				B2CD20CC201583C200EF8AC2 /* NSObject+AMKSwizzle.m in Sources */,
+				B252DCC8206C97E00038831F /* NSObject+AMKSwizzle.m in Sources */,
+				B252DCCC206C97E00038831F /* AMKViewModel.m in Sources */,
+				B252DCCB206C97E00038831F /* AMKViewController.m in Sources */,
 				B2667E3C202045E6000989D2 /* FourVM.m in Sources */,
-				B2CD20CF201583C200EF8AC2 /* UIViewController+AMKLogic.m in Sources */,
 				B2667E39202045D4000989D2 /* FourVC.m in Sources */,
 				B2FD041E20187FF10039DE10 /* ThreeViewModel.m in Sources */,
 				B2CD2095201583BA00EF8AC2 /* main.m in Sources */,
 				B2CD2087201583BA00EF8AC2 /* AppDelegate.m in Sources */,
-				B2FD0414201713650039DE10 /* AMKJumpManager.m in Sources */,
 				B2CD20D9201596F000EF8AC2 /* FirstViewController.m in Sources */,
 				B2CD20DF2015997100EF8AC2 /* FirstViewModel.m in Sources */,
-				B215715D201C45F20011BA7F /* AMKWorkSpace.m in Sources */,
+				B252DCCA206C97E00038831F /* AMKJumpManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

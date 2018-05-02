@@ -21,10 +21,17 @@ AMK_EXPORT_WORKSPACE
     
     self.intentData = @{@"intent":@"My name is laoxia"};
     
-    AMK_PUSH_Component_Name(@"FourVC", @{@"aaaa":@"bbb"}, {
-        
+//    AMK_PUSH_Component_Name(@"FourVC", @{@"aaaa":@"bbb"}, {
+//
+//        aimsInterface.view.backgroundColor = [UIColor orangeColor];
+//    })
+    
+    AMK_Present_Component_Name(@"FourVC", @{@"aaaa":@"bbb"}, {
+
         aimsInterface.view.backgroundColor = [UIColor orangeColor];
-    })
+
+    }, {});
+    
 }
 
 -(void)onNewIntent:(id)intentData{

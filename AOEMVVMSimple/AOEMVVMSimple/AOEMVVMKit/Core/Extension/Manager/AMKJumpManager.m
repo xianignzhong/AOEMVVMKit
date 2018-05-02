@@ -145,31 +145,32 @@
                 
                 AMKVc * vc = nav.viewControllers.firstObject;
                 
-                if (customCodeBlock) {
-                    
-                    customCodeBlock(vc);
-                }
-                
                 vc.formComponentVc = thisInterface;
                 
                 if (params) {
                     
                     vc.params = params;
                 }
+                
+                if (customCodeBlock) {
+                    
+                    customCodeBlock(vc);
+                }
+                
             }
             
         }else{
-            
-            if (customCodeBlock) {
-                
-                customCodeBlock(aimsInterface);
-            }
             
             aimsInterface.formComponentVc = thisInterface;
             
             if (params) {
                 
                 aimsInterface.params = params;
+            }
+            
+            if (customCodeBlock) {
+                
+                customCodeBlock(aimsInterface);
             }
         }
         
@@ -228,16 +229,16 @@
         
         if (aimsInterface) {
             
-            if (customCodeBlock) {
-                
-                customCodeBlock(aimsInterface);
-            }
-            
             aimsInterface.formComponentVc = thisInterface;
             
             if (params) {
                 
                 aimsInterface.params = params;
+            }
+            
+            if (customCodeBlock) {
+                
+                customCodeBlock(aimsInterface);
             }
             
             if (format.amk_nav && [format.amk_nav isEqualToString:@"nav"]) {
@@ -313,31 +314,32 @@
                         
                         AMKVc * vc = nav.viewControllers.firstObject;
                         
-                        if (customCodeBlock) {
-                            
-                            customCodeBlock(vc);
-                        }
-                        
                         vc.formComponentVc = thisInterface;
                         
                         if (params) {
                             
                             vc.params = params;
                         }
+                        
+                        if (customCodeBlock) {
+                            
+                            customCodeBlock(vc);
+                        }
+                        
                     }
                     
                 }else{
-                    
-                    if (customCodeBlock) {
-                        
-                        customCodeBlock(aimsInterface);
-                    }
                     
                     aimsInterface.formComponentVc = thisInterface;
                     
                     if (params) {
                         
                         aimsInterface.params = params;
+                    }
+                    
+                    if (customCodeBlock) {
+                        
+                        customCodeBlock(aimsInterface);
                     }
                 }
                 
