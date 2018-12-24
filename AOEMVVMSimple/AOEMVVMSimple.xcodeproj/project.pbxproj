@@ -165,10 +165,10 @@
 			isa = PBXGroup;
 			children = (
 				B252DCAC206C97E00038831F /* AMKUnitMarco.h */,
-				B252DCAD206C97E00038831F /* NSObject+AMKSwizzle.m */,
-				B252DCAE206C97E00038831F /* AMKParser.m */,
 				B252DCAF206C97E00038831F /* NSObject+AMKSwizzle.h */,
+				B252DCAD206C97E00038831F /* NSObject+AMKSwizzle.m */,
 				B252DCB0206C97E00038831F /* AMKParser.h */,
+				B252DCAE206C97E00038831F /* AMKParser.m */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -203,12 +203,12 @@
 		B252DCB7206C97E00038831F /* Layer */ = {
 			isa = PBXGroup;
 			children = (
-				B252DCB8206C97E00038831F /* AMKViewController.m */,
-				B252DCB9206C97E00038831F /* UIViewController+AMKLogic.h */,
 				B252DCBA206C97E00038831F /* AMKViewModel.m */,
 				B252DCBB206C97E00038831F /* AMKViewModel.h */,
+				B252DCB9206C97E00038831F /* UIViewController+AMKLogic.h */,
 				B252DCBC206C97E00038831F /* UIViewController+AMKLogic.m */,
 				B252DCBD206C97E00038831F /* AMKViewController.h */,
+				B252DCB8206C97E00038831F /* AMKViewController.m */,
 			);
 			path = Layer;
 			sourceTree = "<group>";

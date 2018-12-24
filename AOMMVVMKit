@@ -1,0 +1,15 @@
+Pod::Spec.new do |s|
+s.name         = "AOEMVVMKit"
+s.version      = "1.0.0"
+s.summary      = "一个建立pod仓库的proj."
+s.description  = <<-DESC
+这只是一个建立pod的仓库
+DESC
+s.homepage     = "https://github.com/xianignzhong/AOEMVVMKit"
+s.license      = { :type => "MIT", :file => "LICENSE" }
+s.author             = { "NingZhong" => "xianingzhong@163.com" }
+s.platform     = :ios, "8.0"
+s.source       = { :git => "https://github.com/xianignzhong/AOEMVVMKit.git", :tag => s.version }
+s.source_files  = "AOEMVVMKit", "AOEMVVMKit/AOEMVVMSimple/AOEMVVMSimple/AOEMVVMKit/**/*.{h,m}"
+s.requires_arc = true
+end
